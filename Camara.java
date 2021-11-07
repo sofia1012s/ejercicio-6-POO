@@ -1,17 +1,15 @@
-public class Camara implements Dispositivo {
-    public int precio = 0;
-    public String serie = "";
-    public String marca = "";
-    public String fechaF = "";
-    public String marcador = "";
+public class Camara extends DispositivoAbstracto {
 
-    public void dispositivo(int precio, String serie, String marca, String fechaF, String marcador){
-        this.precio = precio;
-        this.serie = serie;
-        this.marca = marca;
-        this.fechaF = fechaF;
-        this.marcador = marcador;
+    public String interactuar(int opcion){
+        String interaccion = "";
+        switch(opcion){
+            case 1:
+                interaccion = "Se ha tomado una foto.";
+                break;
+            case 2:
+            interaccion = "Se reprodujo un video.";
+                break;
+        }
+        return interaccion;
     }
-
-    public void interactuar(int opcion){}
 }

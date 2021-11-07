@@ -1,17 +1,16 @@
-public class Smartwatch implements Dispositivo{
-    public int precio = 0;
-    public String serie = "";
-    public String marca = "";
-    public String fechaF = "";
-    public String marcador = "";
+public class Smartwatch extends DispositivoAbstracto{
 
-    public void dispositivo(int precio, String serie, String marca, String fechaF, String marcador){
-        this.precio = precio;
-        this.serie = serie;
-        this.marca = marca;
-        this.fechaF = fechaF;
-        this.marcador = marcador;
+    public String interactuar(int opcion){
+        String interaccion = "";
+        switch(opcion){
+            case 1:
+                interaccion = "Se realizo una llamada de prueba";
+                break;
+            case 2:
+                interaccion = "Fotografia guardada.";
+                break;
+ 
+        }
+        return interaccion;
     }
-
-    public void interactuar(int opcion){}
 }
