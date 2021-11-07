@@ -25,16 +25,16 @@ public class Vista {
     }
 
     public void productos() {
-        String Mensaje = "\nA continuacion se mostrara nuestro catalogo de productos\n" + "1. Smartphones\n"
-                + "a. Hacen llamadas\n" + "b. Toman fotografías\n" + "c. Pueden navegar por internet\n"
-                + "d. Pueden reproducir videos\n" + "e. Son portables\n" + "\n2. Teléfonos Celulares\n"
-                + "a. Hacen llamadas\n" + "b. Son portables\n" + "\n3. Teléfonos fijos\n" + "a. Hacen llamadas\n"
-                + "\n4. Cámaras fotográficas\n" + "a. Toman fotografías\n" + "b. Pueden reproducir videos\n"
+        String Mensaje = "\nA continuacion se observa nuestro catalogo de productos\n" + "1. Smartphones\n"
+                + "a. Hacen llamadas\n" + "b. Toman fotografias\n" + "c. Pueden navegar por internet\n"
+                + "d. Pueden reproducir videos\n" + "e. Son portables\n" + "\n2. Telefonos Celulares\n"
+                + "a. Hacen llamadas\n" + "b. Son portables\n" + "\n3. Telefonos fijos\n" + "a. Hacen llamadas\n"
+                + "\n4. Camaras fotograficas\n" + "a. Toman fotografias\n" + "b. Pueden reproducir videos\n"
                 + "c. Son portables\n" + "\n5. Computador Personal (Desktop)\n" + "a. Pueden navegar por internet\n"
                 + "b. Pueden reproducir videos\n" + "c. Ejecutar Videojuegos\n" + "\n6. Computador Personal (Laptop)\n"
                 + "a. Pueden navegar por internet\n" + "b. Pueden reproducir videos\n" + "c. Son portables\n"
                 + "\n7. Smart TV\n" + "a. Pueden navegar por internet\n" + "b. Pueden reproducir videos\n"
-                + "\n8. Tablets\n" + "a. Toman fotografías\n" + "b. Pueden navegar por internet\n"
+                + "\n8. Tablets\n" + "a. Toman fotografias\n" + "b. Pueden navegar por internet\n"
                 + "c. Pueden reproducir videos\n" + "d. Son portables\n" + "\n9. Smartwatch\n"
                 + "a. Toman fotografías\n" + "b. Son portables\n" + "c. Hacen llamadas\n";
 
