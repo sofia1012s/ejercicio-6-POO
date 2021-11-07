@@ -16,7 +16,8 @@ public class Vista {
     }
 
     public int Menu() {
-        String Mensaje = "\nQue desea hacer?\n" + "1. Realizar una compra\n" + "2. Ver carrito de compras\n" + "3. Salir\n";
+        String Mensaje = "\nQue desea hacer?\n" + "1. Realizar una compra\n" + "2. Ver carrito de compras\n"
+                + "3. Salir\n";
         System.out.println(
                 "\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
                         + Mensaje);
@@ -43,11 +44,26 @@ public class Vista {
                         + Mensaje);
     }
 
-    public int producto(){
-        System.out.println("\n-En cual producto se encuentra interesado? (Escriba el numero del producto)");
+    public int producto() {
+        System.out.println("\n-En cual producto se encuentra interesado? (Escriba el numero del producto)"
+                + "\n1. Smartphone" + "\n2. Telefono Celular " + "\n3. Telefonos fijos" + "\n4. Camaras fotograficas"
+                + "\n5. Computador Personal (Desktop)" + "\n6. Computador Personal (Laptop)" + "\n7. Smart TV"
+                + "\n8. Tablets" + "\n9. Smartwatch" + "\n10. Regresar al menu principal");
         int opcion = scan.nextInt();
 
         return opcion;
     }
 
+    public int opcionesProducto() {
+        System.out.println("\n-Que desea realizar con este producto?" + "\n1) Probar sus funcionalidades"
+                + "\n2)Agregarlo a mi carrito de compras" + "\n3)Nada, regresar al listado de productos");
+        int opcion = scan.nextInt();
+
+        return opcion;
+    }
+
+    public void agregadoExito()
+    {
+        System.out.println("\nSu producto se ha agregado con exito!");
+    }
 }
