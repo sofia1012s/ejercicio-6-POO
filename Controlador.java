@@ -6,6 +6,7 @@ public class Controlador {
      */
     public static void main(String[] args) {
         int opcionMenu = 0;
+        int opProducto = 0;
         boolean p = false;
 
         Vista vis = new Vista();
@@ -15,7 +16,7 @@ public class Controlador {
             do {
                 try {
                     vis = new Vista();
-                    opcionMenu = vis.Menu(opcionMenu);
+                    opcionMenu = vis.Menu();
                     p = true;
                 } catch (InputMismatchException ex) {
                     System.out.println("\nPor favor, ingresa un numero\n");
@@ -26,6 +27,18 @@ public class Controlador {
             switch (opcionMenu) {
             case 1: // Realizar una compra
             vis.productos();
+
+            do {
+                try {
+                    vis = new Vista();
+                    opProducto = vis.producto();
+                    p = true;
+                } catch (InputMismatchException ex) {
+                    System.out.println("\nPor favor, ingresa un numero\n");
+                    p = false;
+                }
+            } while (!p);
+            
                 break;
 
             case 2: // Ver carrito de compras

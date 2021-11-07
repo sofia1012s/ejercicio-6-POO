@@ -15,17 +15,17 @@ public class Vista {
                         + "\nBienvenido a nuestra tienda en linea");
     }
 
-    public int Menu(int opcion) {
+    public int Menu() {
         String Mensaje = "\nQue desea hacer?\n" + "1. Realizar una compra\n" + "2. Ver carrito de compras\n" + "3. Salir\n";
         System.out.println(
                 "\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
                         + Mensaje);
-        opcion = scan.nextInt();
+        int opcion = scan.nextInt();
         return opcion;
     }
 
     public void productos() {
-        String Mensaje = "\nA continuacion se observa nuestro catalogo de productos\n" + "1. Smartphones\n"
+        String Mensaje = "\nA continuacion se observa nuestro catalogo de productos\n" + "\n1. Smartphones\n"
                 + "a. Hacen llamadas\n" + "b. Toman fotografias\n" + "c. Pueden navegar por internet\n"
                 + "d. Pueden reproducir videos\n" + "e. Son portables\n" + "\n2. Telefonos Celulares\n"
                 + "a. Hacen llamadas\n" + "b. Son portables\n" + "\n3. Telefonos fijos\n" + "a. Hacen llamadas\n"
@@ -36,11 +36,18 @@ public class Vista {
                 + "\n7. Smart TV\n" + "a. Pueden navegar por internet\n" + "b. Pueden reproducir videos\n"
                 + "\n8. Tablets\n" + "a. Toman fotografias\n" + "b. Pueden navegar por internet\n"
                 + "c. Pueden reproducir videos\n" + "d. Son portables\n" + "\n9. Smartwatch\n"
-                + "a. Toman fotografías\n" + "b. Son portables\n" + "c. Hacen llamadas\n";
+                + "a. Toman fotografias\n" + "b. Son portables\n" + "c. Hacen llamadas\n";
 
         System.out.println(
                 "\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
                         + Mensaje);
+    }
+
+    public int producto(){
+        System.out.println("\n-En cual producto se encuentra interesado? (Escriba el numero del producto)");
+        int opcion = scan.nextInt();
+
+        return opcion;
     }
 
 }
