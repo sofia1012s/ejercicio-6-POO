@@ -50,7 +50,7 @@ public class Carrito{
     public String toString() {
         String results = "\n";
         for (int i = 0; i < this.productos.size(); i++) {
-            results += this.productos.get(i).getClass() + " - "+ this.productos.get(i).marca +  " - "+ this.productos.get(i).serie;
+            results += this.productos.get(i).getClass() + " - "+ this.productos.get(i).marca +  " - "+ this.productos.get(i).precio;
             
         }
         return results;
