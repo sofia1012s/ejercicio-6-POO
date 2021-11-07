@@ -66,7 +66,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Smartphone smartphone = new Smartphone();
-                        smartphone.dispositivo(1800, "123456", "Apple", "25/08/2016", "-------");
+                        //smartphone.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(smartphone);
                         vis.agregadoExito();
                         break;
