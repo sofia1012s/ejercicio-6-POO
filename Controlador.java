@@ -66,7 +66,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Smartphone smartphone = new Smartphone();
-                        smartphone.dispositivo(precio, serie, marca, fechaF, marcador);
+                        smartphone.dispositivo(1800, "123456", "Apple", "25/08/2016", "-------");
                         carrito.agregar(smartphone);
                         vis.agregadoExito();
                         break;
@@ -100,7 +100,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Celular celular = new Celular();
-                        celular.dispositivo(precio, serie, marca, fechaF, marcador);
+                        //celular.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(celular);
                         vis.agregadoExito();
                         break;
@@ -133,6 +133,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Telefono telefono = new Telefono();
+                        //telefono.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(telefono);
                         vis.agregadoExito();
                         break;
@@ -165,6 +166,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Camara camara = new Camara();
+                        //camara.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(camara);
                         vis.agregadoExito();
                         break;
@@ -197,6 +199,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Desktop desktop = new Desktop();
+                        //desktop.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(desktop);
                         vis.agregadoExito();
                         break;
@@ -229,6 +232,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Portatil portatil = new Portatil();
+                        //portatil.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(portatil);
                         vis.agregadoExito();
                         break;
@@ -261,6 +265,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         SmartTV smartTV = new SmartTV();
+                        //smartTV.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(smartTV);
                         vis.agregadoExito();
                         break;
@@ -293,6 +298,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Tablet tablet = new Tablet();
+                        //tablet.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(tablet);
                         vis.agregadoExito();
                         break;
@@ -325,6 +331,7 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Smartwatch smartwatch = new Smartwatch();
+                        //smartwatch.dispositivo(precio, serie, marca, fechaF, marcador);
                         carrito.agregar(smartwatch);
                         vis.agregadoExito();
                         break;
@@ -345,7 +352,8 @@ public class Controlador {
                 break;
 
             case 2: // Ver carrito de compras
-                carrito.toString();
+                
+                System.out.println(carrito.toString());
                 break;
 
             case 3: // Salir
