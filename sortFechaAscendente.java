@@ -1,11 +1,10 @@
 import java.util.*;
 
-public class sortFechaAscendente implements Comparator<Dispositivo>{
+public class sortFechaAscendente implements Comparator<DispositivoAbstracto>{
 
     @Override
-    public int compare(Dispositivo a, Dispositivo b) {
-        // TODO Auto-generated method stub
-        return a.fechaF.compareTo(b.fechaF);
+    public int compare(DispositivoAbstracto a, DispositivoAbstracto b) {
+        return a.getFechaF().compareTo(b.getFechaF());
     }
     
 }

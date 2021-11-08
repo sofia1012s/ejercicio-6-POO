@@ -1,10 +1,10 @@
 import java.util.*;
 
-public class sortMarcaAscendente implements Comparator<Dispositivo>{
+public class sortMarcaAscendente implements Comparator<DispositivoAbstracto>{
     
     @Override
-    public int compare(Dispositivo a, Dispositivo b) {
-        return a.marca.compareTo(b.marca);
+    public int compare(DispositivoAbstracto a, DispositivoAbstracto b) {
+        return a.getMarca().compareTo(b.getMarca());
     }
     
 }

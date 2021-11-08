@@ -2,12 +2,12 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-public class sortPrecioAscendente implements Comparator<Dispositivo> {
+public class sortPrecioAscendente implements Comparator<DispositivoAbstracto> {
 
     @Override
-    public int compare(Dispositivo a, Dispositivo b) {
+    public int compare(DispositivoAbstracto a, DispositivoAbstracto b) {
         
-        return a.precio - b.precio;
+        return a.getPrecio() - b.getPrecio();
     }
 
 
