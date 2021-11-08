@@ -66,4 +66,9 @@ public class Vista {
     {
         System.out.println("\nSu producto se ha agregado con exito!");
     }
+
+    public void carrito(String s)
+    {
+        System.out.println("\nA continuacion observara su carrito de compras: ");
+    }
 }
