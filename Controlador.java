@@ -63,10 +63,14 @@ public class Controlador {
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
 
+
+                        //no me va a funcionar porque el new Smartphone() esta abajo
+
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Smartphone smartphone = new Smartphone();
-                        //smartphone.dispositivo(precio, serie, marca, fechaF, marcador);
+                        smartphone.dispositivo(6000, "X", "apple", "2021", "AFG20" );
+                        vis.caracteristicasDispositivo("Smartphone", smartphone.getPrecio(), smartphone.getSerie(), smartphone.getMarca(), smartphone.getFechaF(), smartphone.getMarcador());
                         carrito.agregar(smartphone);
                         vis.agregadoExito();
                         break;
@@ -100,7 +104,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Celular celular = new Celular();
-                        //celular.dispositivo(precio, serie, marca, fechaF, marcador);
+                        celular.dispositivo(1200, "20", "nokia", "1800", "STRNG" );
+                        vis.caracteristicasDispositivo("Celular", celular.getPrecio(), celular.getSerie(), celular.getMarca(), celular.getFechaF(), celular.getMarcador());
                         carrito.agregar(celular);
                         vis.agregadoExito();
                         break;
@@ -133,7 +138,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Telefono telefono = new Telefono();
-                        //telefono.dispositivo(precio, serie, marca, fechaF, marcador);
+                        telefono.dispositivo(500, "mg30", "claro", "2021", "cl21");
+                        vis.caracteristicasDispositivo("Telefono", telefono.getPrecio(), telefono.getSerie(), telefono.getMarca(), telefono.getFechaF(), telefono.getMarcador());
                         carrito.agregar(telefono);
                         vis.agregadoExito();
                         break;
@@ -166,7 +172,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Camara camara = new Camara();
-                        //camara.dispositivo(precio, serie, marca, fechaF, marcador);
+                        camara.dispositivo(5070, "M30", "RED", "2019", "R2019");
+                        vis.caracteristicasDispositivo("Camara", camara.getPrecio(), camara.getSerie(), camara.getMarca(), camara.getFechaF(), camara.getMarcador());
                         carrito.agregar(camara);
                         vis.agregadoExito();
                         break;
@@ -199,7 +206,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Desktop desktop = new Desktop();
-                        //desktop.dispositivo(precio, serie, marca, fechaF, marcador);
+                        desktop.dispositivo(4000, "7", "Hp", "2020", "H20");
+                        vis.caracteristicasDispositivo("Computadora de escritorio", desktop.getPrecio(), desktop.getSerie(), desktop.getMarca(), desktop.getFechaF(), desktop.getMarcador());
                         carrito.agregar(desktop);
                         vis.agregadoExito();
                         break;
@@ -232,7 +240,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Portatil portatil = new Portatil();
-                        //portatil.dispositivo(precio, serie, marca, fechaF, marcador);
+                        portatil.dispositivo(4000, "10", "Dell", "2020", "Del2020");
+                        vis.caracteristicasDispositivo("Laptop", portatil.getPrecio(), portatil.getSerie(), portatil.getMarca(), portatil.getFechaF(), portatil.getMarcador());
                         carrito.agregar(portatil);
                         vis.agregadoExito();
                         break;
@@ -265,7 +274,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         SmartTV smartTV = new SmartTV();
-                        //smartTV.dispositivo(precio, serie, marca, fechaF, marcador);
+                        smartTV.dispositivo(7000, "NG", "Toshiba", "2021", "to21");
+                        vis.caracteristicasDispositivo("Smart TV", smartTV.getPrecio(), smartTV.getSerie(), smartTV.getMarca(), smartTV.getFechaF(), smartTV.getMarcador());
                         carrito.agregar(smartTV);
                         vis.agregadoExito();
                         break;
@@ -298,7 +308,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Tablet tablet = new Tablet();
-                        //tablet.dispositivo(precio, serie, marca, fechaF, marcador);
+                        tablet.dispositivo(2100, "S6", "Samsung", "2020", "S620");
+                        vis.caracteristicasDispositivo("Tablet", tablet.getPrecio(), tablet.getSerie(), tablet.getMarca(), tablet.getFechaF(), tablet.getMarcador());
                         carrito.agregar(tablet);
                         vis.agregadoExito();
                         break;
@@ -331,7 +342,8 @@ public class Controlador {
                         break;
                     case 2: // Agregarlo al carrito de compras
                         Smartwatch smartwatch = new Smartwatch();
-                        //smartwatch.dispositivo(precio, serie, marca, fechaF, marcador);
+                        smartwatch.dispositivo(5000, "21", "apple", "2021", "Applewtch");
+                        vis.caracteristicasDispositivo("Smart Watch", smartwatch.getPrecio(), smartwatch.getSerie(), smartwatch.getMarca(), smartwatch.getFechaF(), smartwatch.getMarcador());
                         carrito.agregar(smartwatch);
                         vis.agregadoExito();
                         break;

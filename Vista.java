@@ -71,4 +71,74 @@ public class Vista {
     {
         System.out.println("\nA continuacion observara su carrito de compras: ");
     }
+
+    public void caracteristicasDispositivo(String dispositivo, int precio, String serie, String marca, String fecha, String marcador){
+        System.out.println("\nCaracteristicas del dispositivo " + dispositivo + ":" + "\nPrecio: Q" + precio + "\nSerie: " + serie + 
+                "\nMarca: " + marca + "\nAño de fabricacion: " + fecha + "\nMarcador AR: " + marcador);
+    }
+
+    public int interaccionCamara(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Tomar foto." + "\n2. Reproducir video.");
+        int interaccion = scan.nextInt();
+        return interaccion; 
+    }
+
+    public int interaccionCelular(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar.");
+        int interaccion = scan.nextInt();
+        return interaccion; 
+    }
+
+    public int interaccionDesktop(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Navegar en internet." + "\n2. Reproducir video." + "\n3. Jugar videojuego");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionPortatil(){
+        System.out.println("\nQue desea hacer con el dispositivo? "  + "\n1. Navegar en internet." + "\n2. Reproducir video." + "\n3. Jugar videojuego");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionSmartphone(){
+        System.out.println("\nQue desea hacer con el dispositivo? "  + "\n1. Llamar." + "\n2. Tomar foto." + "\n3. Navegar en internet" + "\n4. Reproducir video.");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionSmartTV(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Navegar en internet." + "\n2. Reproducir video.");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionSmartwatch(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar." + "\n2. Tomar foto.");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionTablet(){
+        System.out.println("\nQue desea hacer con el dispositivo? "  + "\n1. Tomar foto." + "\n2. Navegar por internet." + "\n3. Reproducir video.");
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public int interaccionTelefono(){
+        System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar." );
+        int interaccion = scan.nextInt();
+        
+        return interaccion; 
+    }
+
+    public void interactuando(String opcion){
+        System.out.println(opcion);
+    }
 }
