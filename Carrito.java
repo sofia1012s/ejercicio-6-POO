@@ -1,36 +1,36 @@
 import java.util.*;
 
 public class Carrito{
-    private ArrayList<Dispositivo> productos = new ArrayList<Dispositivo>();
+    private ArrayList<DispositivoAbstracto> productos = new ArrayList<DispositivoAbstracto>();
     private int total = 0;
 
 
-    public ArrayList<Dispositivo> sortPrecioAscendente() {
+    public ArrayList<DispositivoAbstracto> sortPrecioAscendente() {
         Collections.sort(productos, new sortPrecioAscendente());
         return productos;
     }
 
-    public ArrayList<Dispositivo> sortPrecioDescendente() {
+    public ArrayList<DispositivoAbstracto> sortPrecioDescendente() {
         Collections.sort(productos, new sortPrecioDescendente());
         return productos;
     }
 
-    public ArrayList<Dispositivo> sortFechaAscendente() {
+    public ArrayList<DispositivoAbstracto> sortFechaAscendente() {
         Collections.sort(productos, new sortFechaAscendente());
         return productos;  
     }
 
-    public ArrayList<Dispositivo> sortFechaDescendente() {
+    public ArrayList<DispositivoAbstracto> sortFechaDescendente() {
         Collections.sort(productos, new sortFechaDescendente());
         return productos;  
     }
 
-    public ArrayList<Dispositivo> sortMarcaAscendente() {
+    public ArrayList<DispositivoAbstracto> sortMarcaAscendente() {
         Collections.sort(productos, new sortMarcaAscendente());
         return productos;  
     }
 
-    public ArrayList<Dispositivo> sortMarcaDescendente() {
+    public ArrayList<DispositivoAbstracto> sortMarcaDescendente() {
         Collections.sort(productos, new sortMarcaDescendente());
         return productos;  
     }
@@ -39,7 +39,7 @@ public class Carrito{
         productos.remove(indice);
     }
 
-    public void agregar(Dispositivo dis) {
+    public void agregar(DispositivoAbstracto dis) {
         productos.add(dis);
     }
 
@@ -50,7 +50,7 @@ public class Carrito{
     public String toString() {
         String results = "\n";
         for (int i = 0; i < this.productos.size(); i++) {
-            results += this.productos.get(i).getClass() + " - "+ this.productos.get(i).marca +  " - "+ this.productos.get(i).precio;
+            results += this.productos.get(i).getClass() + " - "+ this.productos.get(i).getMarca() +  " - "+ this.productos.get(i).getPrecio();
             
         }
         return results;
