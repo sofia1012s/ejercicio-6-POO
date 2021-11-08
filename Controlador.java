@@ -352,8 +352,7 @@ public class Controlador {
                 break;
 
             case 2: // Ver carrito de compras
-                
-                System.out.println(carrito.toString());
+                vis.carrito(carrito.toString());
                 break;
 
             case 3: // Salir
