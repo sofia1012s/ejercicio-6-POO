@@ -72,8 +72,9 @@ public class Controlador {
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
 
-                        // no me va a funcionar porque el new Smartphone() esta abajo
-
+                        int opcionInteraccion = vis.interaccionSmartphone();
+                        String interaccion = smartphone.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(smartphone);
@@ -109,7 +110,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionCelular();
+                        String interaccion = celular.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
 
@@ -145,6 +148,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
+                        int opcionInteraccion = vis.interaccionTelefono();
+                        String interaccion = telefono.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
 
                         break;
                     case 2: // Agregarlo al carrito de compras
@@ -179,7 +185,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionCamara();
+                        String interaccion = camara.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(camara);
@@ -213,7 +221,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionDesktop();
+                        String interaccion = desktop.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(desktop);
@@ -247,7 +257,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionPortatil();
+                        String interaccion = portatil.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(portatil);
@@ -281,7 +293,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionSmartTV();
+                        String interaccion = smartTV.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(smartTV);
@@ -315,7 +329,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionTablet();
+                        String interaccion = tablet.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(tablet);
@@ -349,7 +365,9 @@ public class Controlador {
                     // Switch case para la opción que escogió el usuario
                     switch (opcionProducto) {
                     case 1: // Probar funcionalidades
-
+                        int opcionInteraccion = vis.interaccionSmartwatch();
+                        String interaccion = smartwatch.interactuar(opcionInteraccion);
+                        vis.interactuando(interaccion);
                         break;
                     case 2: // Agregarlo al carrito de compras
                         carrito.agregar(smartwatch);
