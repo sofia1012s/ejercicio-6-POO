@@ -40,6 +40,7 @@ public class Carrito {
 
     public void vaciarCarrito() {
         productos.clear();
+        total = 0;
     }
 
     public void agregar(DispositivoAbstracto dis) {
