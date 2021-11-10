@@ -1,3 +1,8 @@
+/**
+ * Empresa.java
+ * @author Héctor de León, Sofía Salguero
+ * @version 9/11/2021
+ */
 public class Empresa {
     String direccion1 = "130 W 30TH NEW YORK NY USA";
     String direccion2 = "25 calle 16-26 zona 15";
@@ -15,6 +20,11 @@ public class Empresa {
     String ciudad2 = "Ciudad de Guatemala";
     String ciudad3 = "Buenos Aires";
 
+    
+    /** 
+     * @param opcion
+     * @return String[]
+     */
     public String[] getEmpresa(int opcion) {
         String[] empresa = {};
 

@@ -1,3 +1,8 @@
+/**
+ * Vista.java
+ * @author Héctor de León, Sofía Salguero
+ * @version 9/11/2021
+ */
 import java.util.*;
 import java.time.*;
 
@@ -16,6 +21,10 @@ public class Vista {
                         + "\nBienvenido a nuestra tienda en linea");
     }
 
+    
+    /** 
+     * @return int
+     */
     public int Menu() {
         String Mensaje = "\nQue desea hacer?\n" + "1. Realizar una compra\n" + "2. Ver carrito de compras\n"
                 + "3. Salir\n";
@@ -26,6 +35,10 @@ public class Vista {
         return opcion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int menuCarrito() {
         String Mensaje = "\nQue desea hacer?\n" + "1. Seguir comprando\n" + "2. Realizar mi compra\n"
                 + "3. Ordenar carrito por precio ascendente\n" + "4. Ordenar carrito por precio descendente\n"
@@ -59,6 +72,10 @@ public class Vista {
                         + Mensaje);
     }
 
+    
+    /** 
+     * @return int
+     */
     public int producto() {
         System.out.println("\n-En cual producto se encuentra interesado? (Escriba el numero del producto)"
                 + "\n1. Smartphone" + "\n2. Telefono Celular " + "\n3. Telefonos fijos" + "\n4. Camaras fotograficas"
@@ -69,6 +86,10 @@ public class Vista {
         return opcion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int opcionesProducto() {
         System.out.println("\n-Que desea realizar con este producto?" + "\n1) Probar sus funcionalidades"
                 + "\n2) Agregarlo a mi carrito de compras" + "\n3) Nada, regresar al listado de productos");
@@ -81,10 +102,23 @@ public class Vista {
         System.out.println("\nSu producto se ha agregado con exito!");
     }
 
+    
+    /** 
+     * @param s
+     */
     public void carrito(String s) {
         System.out.println("\nA continuacion observara su carrito de compras: " + s);
     }
 
+    
+    /** 
+     * @param dispositivo
+     * @param precio
+     * @param serie
+     * @param marca
+     * @param fecha
+     * @param marcador
+     */
     public void caracteristicasDispositivo(String dispositivo, int precio, String serie, String marca, String fecha,
             String marcador) {
         System.out.println(
@@ -92,18 +126,30 @@ public class Vista {
                         + "\nMarca: " + marca + "\nAño de fabricacion: " + fecha + "\nMarcador AR: " + marcador);
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionCamara() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Tomar foto." + "\n2. Reproducir video.");
         int interaccion = scan.nextInt();
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionCelular() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar.");
         int interaccion = scan.nextInt();
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionDesktop() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Navegar en internet."
                 + "\n2. Reproducir video." + "\n3. Jugar videojuego");
@@ -112,6 +158,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionPortatil() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Navegar en internet."
                 + "\n2. Reproducir video." + "\n3. Jugar videojuego");
@@ -120,6 +170,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionSmartphone() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar." + "\n2. Tomar foto."
                 + "\n3. Navegar en internet" + "\n4. Reproducir video.");
@@ -128,6 +182,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionSmartTV() {
         System.out.println(
                 "\nQue desea hacer con el dispositivo? " + "\n1. Navegar en internet." + "\n2. Reproducir video.");
@@ -136,6 +194,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionSmartwatch() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar." + "\n2. Tomar foto.");
         int interaccion = scan.nextInt();
@@ -143,6 +205,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionTablet() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Tomar foto." + "\n2. Navegar por internet."
                 + "\n3. Reproducir video.");
@@ -151,6 +217,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int interaccionTelefono() {
         System.out.println("\nQue desea hacer con el dispositivo? " + "\n1. Llamar.");
         int interaccion = scan.nextInt();
@@ -158,6 +228,10 @@ public class Vista {
         return interaccion;
     }
 
+    
+    /** 
+     * @param opcion
+     */
     public void interactuando(String opcion) {
         System.out.println(opcion);
     }
@@ -169,6 +243,10 @@ public class Vista {
                         + "\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
     }
 
+    
+    /** 
+     * @return int
+     */
     public int escogerEmpresa() {
         System.out.println("\nPor favor, escoja la sucursal más cercana a su país de residencia "
                 + "\n1. Sucursal en Estados Unidos" + "\n-130 W 30TH NEW YORK NY USA - Codigo: 10032\n"
@@ -179,6 +257,10 @@ public class Vista {
         return opcion;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String nombre() {
         System.out.println("\nEscriba su nombre: ");
         String nombre = scan.next();
@@ -186,6 +268,10 @@ public class Vista {
         return nombre;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String apellido() {
         System.out.println("\nEscriba su apellido: ");
         String apellido = scan.next();
@@ -193,18 +279,36 @@ public class Vista {
         return apellido;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String NIT() {
         System.out.println("\nEscriba su NIT o CF: ");
         String NIT = scan.next();
         return NIT;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int eliminar() {
         System.out.println("\nCual producto desea eliminar?: ");
         int opcion = scan.nextInt();
         return opcion;
     }
 
+    
+    /** 
+     * @param NIT
+     * @param nombre
+     * @param total
+     * @param pais
+     * @param ciudad
+     * @param direccion
+     * @param codigo
+     */
     public void factura(String NIT, String nombre, int total, String pais, String ciudad, String direccion,
             String codigo) {
         Random random = new Random();

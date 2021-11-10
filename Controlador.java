@@ -1,3 +1,9 @@
+/**
+ * Controlador.java
+ * @author Héctor de León, Sofía Salguero
+ * @version 9/11/2021
+ * 
+ */
 import java.util.*;
 
 public class Controlador {
